@@ -3,7 +3,7 @@
 close all
 clear all
 clc;
-addpath(genpath('aerodata'),genpath('Used Functions'))
+addpath(genpath('aerodata'),genpath('Used Functions'),addpath( genpath('../../lib')))
 % mex nlplantASYM.c
 % mex nlplantASYM_Reconf.c
 % mex Moms_Coeff_Reconf_estimator.c
@@ -12,7 +12,7 @@ addpath(genpath('aerodata'),genpath('Used Functions'))
 %% General params
 T_sim=0.02; % Sample time of the simulation
 % T_sim=0.04643990929705216 ; % Sample time of stall warning
-
+ 
 %% Trim aircraft (Symetric model)
 % This rutine trim the aircraft at any flight condition
 runF16Sim;
